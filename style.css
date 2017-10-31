@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+
+
+/*general style*/
+@font-face {
+  font-family: 'Popsies';
+  src: url('fonts/Popsies.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+footer,header,section{
+  display:block;
+}
+
+
+html{
+/*  font-family:sans-serif;*/
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+
+body{
+ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.47;
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+}
+p {
+  margin: 0;
+  @include text(rem(18), 1.8, $text-dark-color, normal, 0, none, 300, normal);
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li{
+  display: inline-block;
+}
+a{
+  text-decoration: none !important;
+  cursor: pointer;
+}
+input{
+  
+  border: none;
+}
+section{
+  text-align: center;
+  width: 100%;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+/*detailed styles*/
+
+#container{
+
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+  position: relative;
+  width: 35rem; 
+  height: 25rem; 
+  background-color: #E4E4E4; 
+  border-bottom-left-radius: 100% 40px;
+  border-bottom-right-radius: 100% 10px;
+  border-top-left-radius: 100% 10px;
+  transform: skew(-5deg, -2deg);
+
+}
+
+#container:before{
+  content:'';
+  position:absolute;
+  width: 36rem; 
+  height: 25rem; 
+  border-radius:inherit;
+  top: -16px;
+  left: 14px;
+  /* border-bottom-left: 100%; */
+  background:rgba(248,236,194,.55);
+  transform: skew(5deg, 2deg);
+  z-index: -1000;
+}
+#quoteContainer{
+   transform: skew(5deg, 2deg);
+   margin-bottom: 3rem;
+}
+#quoteContainer p:first-child{
+  font-size: 1.2rem;
+  margin:2rem 0 2rem 0;
+  font-style: italic;
+  font-family: 'Popsies' !important;
+}
+#quoteAuthor{
+  text-align: right;
+  font-size: 1.2rem;
+  font-family: 'Popsies' !important;
+}
+h2{
+   transform: skew(5deg, 2deg);
+   color: #6B6B6B;
+   font-weight: bold;
+}
+#btnContainer{
+  transform: skew(5deg, 2deg);
+  padding: 0.5rem 0.1rem;
+  width: 9rem; 
+  background-color: #CCCCCC;
+  margin:0 auto;
+  border-radius: 4%;
+}
+#btn{
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+   
+}
