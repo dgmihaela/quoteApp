@@ -193,3 +193,20 @@ h2{
   font-size: 1.2rem;
    
 }
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width : 480px) {
+
+
+      #container{
+      width: 23rem;
+      height: 21rem;
+      margin-right: 10%;
+    }
+      #container:before{
+      width: 22rem;
+      height: 21rem;
+      margin-right: 10%;
+    }
+}
